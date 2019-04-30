@@ -9,6 +9,5 @@ public class Hooks {
     @Before
     public void initialization() {
         RestAssured.baseURI = Constants.ENDPOINT;
-
     }
 }
