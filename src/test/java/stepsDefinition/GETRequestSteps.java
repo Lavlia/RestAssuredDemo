@@ -1,18 +1,11 @@
 package stepsDefinition;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.cucumber.datatable.DataTable;
 import io.restassured.mapper.ObjectMapperType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 import utils.API_Utils;
@@ -20,10 +13,7 @@ import utils.Constants;
 import utils.Result;
 import utils.SW;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class GETRequestSteps {
@@ -40,7 +30,7 @@ public class GETRequestSteps {
         requestSpecification.queryParam("format", "json");
         requestSpecification.queryParam("page", pageNumber);
 
-        response = requestSpecification.get(Constants.GET_RESOURCE);
+        response = requestSpecification.get(Constants.GET_RESOURCESW);
 
         sw = response.as(SW.class, ObjectMapperType.GSON);
     }
