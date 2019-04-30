@@ -370,12 +370,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner_testRunner - 2019.04.30 at 16h 13m 51s.xml">
-      <configuration name="TestRunner.testRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner_testRunner - 2019.04.30 at 16h 16m 30s.xml">
-      <configuration name="TestRunner.testRunner" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestRunner_testRunner - 2019.04.30 at 16h 17m 31s.xml">
       <configuration name="TestRunner.testRunner" configurationId="TestNG" />
     </history-entry>
@@ -398,6 +392,12 @@
       <configuration name="Scenario: Add a new book in library with valid data" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__Add_a_new_book_in_library_with_valid_data - 2019.04.30 at 17h 57m 20s.xml">
+      <configuration name="Scenario: Add a new book in library with valid data" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Add_a_new_book_in_library_with_valid_data - 2019.04.30 at 18h 01m 07s.xml">
+      <configuration name="Scenario: Add a new book in library with valid data" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Add_a_new_book_in_library_with_valid_data - 2019.04.30 at 18h 01m 25s.xml">
       <configuration name="Scenario: Add a new book in library with valid data" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
