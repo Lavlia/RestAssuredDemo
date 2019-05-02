@@ -6,4 +6,6 @@ public class Constants {
 
     public static final String ENDPOINTBOOK = "http://216.10.245.166";
     public static final String POST_RESOURCEBOOK = "/Library/Addbook.php";
+
+    public static final String DELETE_RESOURCEBOOK = "/Library/DeleteBook.php";
 }

@@ -12,7 +12,7 @@ public class Hooks {
         RestAssured.baseURI = Constants.ENDPOINTSW;
     }
 
-    @Before("@PostOperation")
+    @Before("@PostDeleteOperation")
     public void initializationPost() {
         RestAssured.baseURI = Constants.ENDPOINTBOOK;
     }

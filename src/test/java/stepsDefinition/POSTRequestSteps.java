@@ -25,6 +25,7 @@ public class POSTRequestSteps {
         jsonObject.put("isbn", data.get(0).get("isbn"));
         jsonObject.put("aisle", data.get(0).get("aisle"));
         jsonObject.put("author", data.get(0).get("author"));
+        jsonObject.put("id", data.get(0).get("id"));
 
         RequestSpecification requestSpecification = new API_Utils().getRequestSpecification();
         requestSpecification.body(jsonObject);
