@@ -7,6 +7,7 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import utils.API_Utils;
 import utils.Constants;
+import utils.Data;
 
 public class DELETERequestSteps {
     Response response;
@@ -14,7 +15,7 @@ public class DELETERequestSteps {
     @When("User wants to remove a book with valid id")
     public void userWantsToRemoveABookWithValidId() {
         RequestSpecification requestSpecification = new API_Utils().getRequestSpecification();
-        requestSpecification.body("33303");
+        requestSpecification.body("{\"ID\":" + Data.getId() + "\"}");
         response = requestSpecification.post(Constants.DELETE_RESOURCEBOOK);
     }
 
