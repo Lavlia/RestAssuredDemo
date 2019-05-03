@@ -1,9 +1,11 @@
 package stepsDefinition;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import io.restassured.RestAssured;
 
 import utils.Constants;
+import utils.TestContext;
 
 public class Hooks {
 
@@ -15,5 +17,10 @@ public class Hooks {
     @Before("@PostDeleteOperation")
     public void initializationPost() {
         RestAssured.baseURI = Constants.ENDPOINTBOOK;
+    }
+
+    @After
+    public void tearDown() {
+        TestContext.CONTEXT.reset();
     }
 }

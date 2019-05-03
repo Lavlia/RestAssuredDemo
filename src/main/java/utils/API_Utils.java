@@ -8,6 +8,8 @@ import io.restassured.specification.RequestSpecification;
 
 import java.util.Random;
 
+import static utils.TestContext.CONTEXT;
+
 public class API_Utils {
     public static JsonPath rawToJson(Response response) {
         String responseString = response.asString();
@@ -26,5 +28,9 @@ public class API_Utils {
         int integerFromString = Integer.parseInt(data);
         int intNumber = randomInteger + integerFromString;
         return Integer.toString(intNumber);
+    }
+
+    public TestContext testContext(){
+        return CONTEXT;
     }
 }
