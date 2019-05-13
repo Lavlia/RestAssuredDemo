@@ -25,7 +25,6 @@ public class MultipleGETRequestSteps extends API_Utils {
 
         RequestSpecification requestSpecification = new API_Utils().getRequestSpecification();
 
-
         List<Map<String, String>> data = table.asMaps(String.class, String.class);
         for (int i = 0; i < data.size(); i++) {
             requestSpecification.pathParam("id", data.get(i).get("id"));
@@ -50,3 +49,4 @@ public class MultipleGETRequestSteps extends API_Utils {
         }
     }
 }
+

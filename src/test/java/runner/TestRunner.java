@@ -8,8 +8,8 @@ public class TestRunner {
     public void testRunner() {
         Main.main(new String[]{
                 "-p", "pretty",
-                "-p", "html:target/cucumber-reports",
-                "-p", "json:target/report.json",
+                "-p", "html:target/cucumber-report",
+                "-p", "json:target/cucumber-report/cucumber.json",
                 "-g", "stepsDefinition", "src/test/java/features"
         });
     }
